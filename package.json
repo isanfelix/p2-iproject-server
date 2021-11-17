@@ -1,0 +1,36 @@
+{
+  "name": "p2-iproject-server",
+  "version": "1.0.0",
+  "description": "Individual Project - Server",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx jest --detectOpenHandles --runInBand --forceExit",
+    "db:dev": "npx sequelize-cli db:drop && npx sequelize-cli db:create && npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all",
+    "db:test": "npx sequelize-cli --env=test db:drop && npx sequelize-cli --env=test db:create && npx sequelize-cli --env=test db:migrate && npx sequelize-cli --env=test db:seed:all"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isanfelix/p2-iproject-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/isanfelix/p2-iproject-server/issues"
+  },
+  "homepage": "https://github.com/isanfelix/p2-iproject-server#readme",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "pg": "^8.7.1",
+    "sequelize": "^6.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "sequelize-cli": "^6.3.0"
+  }
+}
