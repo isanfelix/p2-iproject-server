@@ -8,7 +8,6 @@ const routes = require('./routes/index')
 const app = express()
 const port = process.env.port || 3000
 
-const { User } = require('./models/index')
 app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }));
